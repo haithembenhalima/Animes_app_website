@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="main">
+    <header class="header">
+        <a href="#" class="logo">Anime Lovers</a>
+        <nav class="navbar">
+            <a href="">Account</a>
+            <a href="./animes/anime_add">Add Anime</a>
+        </nav>
+    </header>
+
+    <div class="animes-list">
+        <% animes.forEach(element => { %>
+            <div class="anime">
+                <img src="/img/background.png" alt="anime picture" width="170" height="170">
+                <h2><%= element.name %></h2>
+                <h4><%= element.rating %></h4>
+                <button>Watch Now</button>
+            </div>
+        <% }) %>
+
+
+    </div>
+
+</div>
+</body>
+</html>

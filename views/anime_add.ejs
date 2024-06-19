@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Lofi Login Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="main">
+    <header class="header">
+        <a href="#" class="logo">Anime Lovers</a>
+        <nav class="navbar">
+            <a href="../signup">Register</a>
+        </nav>
+    </header>
+
+    <div class="card">
+          <form action="./anime_add" method="post" enctype="multipart/form-data">
+            <h1>Add Anime Here</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" required name="name">
+                <label for="">Name</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="number" required name="rating">
+                <label for="">Rating</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="file" required name="file" accept="image/*">
+                <label for=""></label>
+            </div>
+
+            <div class="register">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

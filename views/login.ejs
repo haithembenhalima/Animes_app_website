@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Lofi Login Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="main">
+    <header class="header">
+        <a href="#" class="logo">Anime Lovers</a>
+        <nav class="navbar">
+            <a href="./signup">Register</a>
+        </nav>
+    </header>
+
+    <div class="card">
+          <form action="./login" method="post">
+            <h1>Login Here</h1>
+            <% if (error) { %>
+                <div style="background-color: red; color: white; border-radius: 6px; padding: 6px">
+                    <%= error %>
+                </div>
+            <% } %>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required name="email">
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required name="password">
+                <label for="">Password</label>
+            </div>
+            <div class="forget">
+                <label for=""><input type="checkbox">Remember Me</label>
+              <a href="#">Forget Password</a>
+            </div>
+            <button>Log in</button>
+            <div class="register">
+                <p>Don't have a account <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

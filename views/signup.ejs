@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="main">
+    <header class="header">
+        <a href="#" class="logo">Anime Lovers</a>
+        <nav class="navbar">
+            <a href="./login">Login</a>
+        </nav>
+    </header>
+    <div class="card">
+          <form action="./signup" method="post">
+            <br><br>
+            <h1>Register Here</h1>
+            <% if (error) { %>
+                <div style="background-color: red; color: white; border-radius: 6px; padding: 6px">
+                    <%= error %>
+                </div>
+            <% } %>
+
+            <% if (user) { %>
+                <div style="background-color: green; color: white; border-radius: 6px; padding: 6px">
+                    <%= user %>
+                </div>
+            <% } %>
+
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" required name="firstname">
+                <label for="">First Name</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" required name="lastname">
+                <label for="">Last Name</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required name="email">
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required name="password">
+                <label for="">Password</label>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
