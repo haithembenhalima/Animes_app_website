@@ -1,5 +1,11 @@
 ## Animes App Website
-<p>
-Simple animes fan website for training built by <b>nodejs</b> with <b>Express.js</b> and <b>Ejs</b> template engine 
-i use here <b>mysql</b> as Database and <b>jsonWebToken</b> for authentication and authorization 
-</p>
+<h3>
+Simple animes fan website for training built by:
+<ul>
+  <li>Express.js</li>
+  <li>Ejs Template Engine</li>
+  <li>Mysql</li>
+  <li>JsonWebToken</li>
+</ul>
+  
+</h3>
